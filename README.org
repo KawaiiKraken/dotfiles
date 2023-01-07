@@ -1,4 +1,4 @@
-* if you want to use the nvim config
+* nvim config
 - install https://github.com/wbthomason/packer.nvim
 
 #+BEGIN_SRC shell
@@ -16,3 +16,7 @@ nvim
 
 #+END_SRC
 
+
+* polybar config
+this is a config for polybar-dwm-module so it likely isnt compatible with polybar
+if you wish to use my full config download polybar-dwm from my game and install polybar-dwm-module
