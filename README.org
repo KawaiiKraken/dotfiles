@@ -1,4 +1,4 @@
-# if you want to use the nvim config
+* if you want to use the nvim config
 - install https://github.com/wbthomason/packer.nvim
 
 #+BEGIN_SRC shell
