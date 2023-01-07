@@ -1,3 +1,4 @@
+* !!! IMPORTANT !!!
 * nvim config
 - install https://github.com/wbthomason/packer.nvim
 
