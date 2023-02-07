@@ -18,22 +18,26 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222222
-background-alt = #003f3f
+background = #14051a
+;background = #222222
+background-alt = #34073a
+;background-alt = #003f3f
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #00bbba
-primary = #003f3f
-secondary = #bd2c40
+foreground = #f407fa
+foreground-alt = #b404ba
+;foreground-alt = #00bbba
+primary = #34073a
+;primary = #003f3f
+secondary = #94079a
 alert = #bd2c40
 
 [bar/mainbar]
-monitor = ${env:DP-2:}
-width = 96%
-height = 40
-offset-x = 2%
-offset-y = 1.7%
-radius = 10.0
+monitor = ${env:DP-2:DP-2}
+width = 100%
+height = 42
+offset-x = 0%
+offset-y = 0%
+radius = 0
 fixed-center = false
 
 background = ${colors.background}
@@ -55,12 +59,12 @@ font-0 = fixed:pixelsize=18;2
 font-1 = unifont:fontformat=truetype:size=16:antialias=false;0
 font-2 = siji:pixelsize=18;1
 
-modules-left = bspwm dwm
+modules-left = dwm
 modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = xbacklight pulseaudio xkeyboard memory cpu eth date powermenu
+modules-right = xbacklight pulseaudio xkeyboard cpu memory eth date powermenu
 
-tray-position = right
+tray-position = none
 tray-padding = 2
 ;tray-background = #0063ff
 
@@ -80,11 +84,11 @@ cursor-scroll = ns-resize
 
 [bar/secondarybar]
 monitor = ${env:HDMI-0:HDMI-0}
-width = 96%
+width = 100%
 height = 40
-offset-x = 2%
-offset-y = 1.7%
-radius = 10.0
+offset-x = 0%
+offset-y = 0%
+radius = 0
 fixed-center = false
 
 background = ${colors.background}
@@ -106,12 +110,12 @@ font-0 = fixed:pixelsize=18;2
 font-1 = unifont:fontformat=truetype:size=16:antialias=false;0
 font-2 = siji:pixelsize=18;1
 
-modules-left = bspwm dwm
+modules-left = dwm
 modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = date
+modules-right = pulseaudio memory date 
 
-tray-position = right
+tray-position = none
 tray-padding = 20
 ;tray-background = #0063ffpadding-right = 13 
 tray-detached = false
@@ -228,7 +232,7 @@ format = <label-tags> <label-layout> <label-floating>
 ; socket-path = /tmp/dwm.sock
 
 ; Left-click to view tag, right-click to toggle tag view
-enable-tags-click = false
+enable-tags-click = true
 ; Scroll to cycle between available tags
 enable-tags-scroll = false
 ; If true and enable-tags-scroll = true, scrolling will view all tags regardless if occupied
