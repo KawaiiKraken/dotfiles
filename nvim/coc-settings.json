@@ -1,0 +1,23 @@
+{
+  "diagnostic.checkCurrentLine": false,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextLimitInOneLine": 1,
+  "coc.preferences.renameFillCurrent": false,
+  "diagnostic.messageDelay": 200,
+  "dialog.rounded": true,
+  "languageserver": {
+    "arduino": {
+      "command": "arduino-language-server",
+      "rootPatterns": ["*.ino"],
+      "filetypes": ["arduino"],
+      "args": [
+        "-clangd",
+        "/usr/bin/clangd",
+        "-cli",
+        "clangd",
+        "-cli-config"
+      ]
+    }
+  }
+}
